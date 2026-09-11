@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EduMax - Announcement</title>
+    <title>Edumax - Announcement</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -14,18 +14,24 @@
         rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="bg-primary p-2">
+<div class="container">
+
+    <header class="bg-primary p-2">
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
+
             <div class="container-fluid flex-wrap p-0">
+
                 <!-- Logo -->
                 <div class="d-flex align-items-center">
                     <a href="./index.html">
-                        <img src="./images/EduMax_logo.png"
+                        <img
+                            src="./images/EduMax_logo.png"
                             alt="EduMax logo"
                             style="width: 140px; height: auto;">
                     </a>
-                    <h1 class="p-2 text-white text-nowrap"
+
+                    <h1
+                        class="p-2 text-white text-nowrap"
                         style="font-size: 4.2rem; margin-left: 8px; line-height: 0.75;">
                         EduMax
                     </h1>
@@ -33,13 +39,17 @@
 
                 <!-- Logout and search -->
                 <div class="ms-auto d-flex flex-column align-items-end">
-                    <a  class="btn btn-light btn-sm"
+
+                    <a
+                        class="btn btn-light btn-sm"
                         href="./pages/registration.html"
                         role="button">
                         Logout
                     </a>
+
                     <form class="d-flex mt-4" role="search" style="width: 210px;">
                         <label for="searchInput" class="visually-hidden">Search</label>
+
                         <div class="position-relative w-100">
                             <button
                                 class="btn position-absolute top-50 translate-middle-y text-dark"
@@ -48,6 +58,7 @@
                                 style="left: 0; height: 22px; padding: 0 4px; border: none; background: transparent;">
                                 <i class="bi bi-search"></i>
                             </button>
+
                             <input
                                 class="form-control"
                                 type="search"
@@ -70,38 +81,136 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navigation -->
+                <!-- Main navigation -->
                 <div class="collapse navbar-collapse justify-content-end w-100"
                     id="navLinks">
 
-        <div class="navbar-nav flex-lg-row flex-nowrap text-end">
-            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
-                href="#">
-                News<span class="d-none d-lg-inline"> | </span>
-            </a>
-            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
-                href="#">
-                Catalogue<span class="d-none d-lg-inline"> | </span>
-            </a>
-            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
-                href="#">
-                Security
-            </a>
-        </div>
-    </div>
+                    <div class="navbar-nav flex-lg-row flex-nowrap text-end">
+                        <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                            href="#">
+                            News<span class="d-none d-lg-inline"> | </span>
+                        </a>
+
+                        <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                            href="#">
+                            Catalogue<span class="d-none d-lg-inline"> | </span>
+                        </a>
+
+                        <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                            href="#">
+                            Security
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </nav>
     </header>
+
     <main>
         <!-- News subpages -->
-        <div class="text-end">
+        <div class="text-start mb-3">
             <a href="#" class="text-muted text-decoration-underline">Events</a>
             <span class="text-muted"> | </span>
             <a href="#" class="text-muted text-decoration-none">
                 <strong>Announcements</strong>
             </a>
         </div>
+
+        <form
+            action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php"
+            method="post"
+            enctype="multipart/form-data">
+
+            <input
+                type="hidden"
+                name="item_ID"
+                value="30001000-5000-654321fedcba">
+
+            <div class="mb-3">
+                <label for="content" class="form-label"><strong>Content:</strong></label>
+                <textarea
+                    class="form-control"
+                    id="content"
+                    name="content"
+                    rows="5"
+                    placeholder="plain text"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label"><strong>Subject line:</strong></label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="e.g. Exams revision timetable (maximum five words)">
+            </div>
+
+            <div class="mb-3">
+                <label for="senderName" class="form-label"><strong>Sender's name:</strong></label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="senderName"
+                    name="sender_name"
+                    placeholder="e.g. Safa Smith">
+            </div>
+
+            <div class="mb-3">
+                <label for="senderRole" class="form-label">
+                    <strong>Sender's role (module lead, administrator, module assistant):</strong>
+                </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="senderRole"
+                    name="sender_role"
+                    placeholder="e.g. module lead">
+            </div>
+
+            <div class="mb-3">
+                <label for="attachment" class="form-label">
+                    <strong>Attachment (optional):</strong>
+                </label>
+                <input
+                    type="file"
+                    class="form-control"
+                    id="attachment"
+                    name="attachment">
+            </div>
+
+            <div class="mb-3">
+                <label for="sendDateTime" class="form-label">
+                    <strong>Date and time that the email should be sent:</strong>
+                </label>
+                <input
+                    type="datetime-local"
+                    class="form-control"
+                    id="sendDateTime"
+                    name="send_datetime"
+                    value="2024-10-01T09:00">
+            </div>
+
+            <div class="mb-3">
+                <label for="priority" class="form-label"><strong>Priority (High/Normal/Low):</strong></label>
+                <select
+                    class="form-select"
+                    id="priority"
+                    name="priority">
+                    <option value="High" selected>High</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+
+        </form>
     </main>
+
     <footer>
     </footer>
 
