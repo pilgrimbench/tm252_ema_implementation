@@ -9,119 +9,107 @@
         rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous">
-
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
         rel="stylesheet">
 </head>
-
 <body>
-<div class="container">
+    <div class="container">
+        <header class="bg-primary p-2">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid flex-wrap p-0">
+                <!-- Logo -->
+                <div class="d-flex align-items-center">
+                    <a href="./index.html">
+                        <img src="./images/EduMax_logo.png"
+                            alt="EduMax logo"
+                            style="width: 140px; height: auto;">
+                    </a>
+                    <h1 class="p-2 text-white text-nowrap"
+                        style="font-size: 4.2rem; margin-left: 8px; line-height: 0.75;">
+                        EduMax
+                    </h1>
+                </div>
 
-    <header class="bg-primary p-2">
-    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <!-- Logout and search -->
+                <div class="ms-auto d-flex flex-column align-items-end">
+                    <a  class="btn btn-light btn-sm"
+                        href="./pages/registration.html"
+                        role="button">
+                        Logout
+                    </a>
+                    <form class="d-flex mt-4" role="search" style="width: 210px;">
+                        <label for="searchInput" class="visually-hidden">Search</label>
+                        <div class="position-relative w-100">
+                            <button
+                                class="btn position-absolute top-50 translate-middle-y text-dark"
+                                type="submit"
+                                aria-label="Submit search"
+                                style="left: 0; height: 22px; padding: 0 4px; border: none; background: transparent;">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input
+                                class="form-control"
+                                type="search"
+                                id="searchInput"
+                                placeholder="search"
+                                style="font-size: 1.0rem; height: 23px; padding: 2px 8px 2px 22px;">
+                        </div>
+                    </form>
+                </div>
 
-        <div class="container-fluid flex-wrap p-0">
+                <!-- Hamburger -->
+                <button
+                    class="navbar-toggler ms-auto mt-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navLinks"
+                    aria-controls="navLinks"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Logo -->
-            <div class="d-flex align-items-center">
-                <a href="./index.html">
-                    <img
-                        src="./images/EduMax_logo.png"
-                        alt="EduMax logo"
-                        style="width: 140px; height: auto;">
-                </a>
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse justify-content-end w-100"
+                    id="navLinks">
 
-                <h1
-                    class="p-2 text-white text-nowrap"
-                    style="font-size: 4.2rem; margin-left: 8px; line-height: 0.75;">
-                    EduMax
-                </h1>
-            </div>
-
-            <!-- Logout and search -->
-            <div class="ms-auto d-flex flex-column align-items-end">
-
-                <a
-                    class="btn btn-light btn-sm"
-                    href="./pages/registration.html"
-                    role="button">
-                    Logout
-                </a>
-
-                <form class="d-flex mt-4" role="search" style="width: 210px;">
-                    <label for="searchInput" class="visually-hidden">Search</label>
-
-                    <div class="position-relative w-100">
-                        <button
-                            class="btn position-absolute top-50 translate-middle-y text-dark"
-                            type="submit"
-                            aria-label="Submit search"
-                            style="left: 0; height: 22px; padding: 0 4px; border: none; background: transparent;">
-                            <i class="bi bi-search"></i>
-                        </button>
-
-                        <input
-                            class="form-control"
-                            type="search"
-                            id="searchInput"
-                            placeholder="search"
-                            style="font-size: 1.0rem; height: 23px; padding: 2px 8px 2px 22px;">
-                    </div>
-                </form>
-
-            </div>
-
-            <!-- Hamburger -->
-            <button
-                class="navbar-toggler ms-auto mt-1"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navLinks"
-                aria-controls="navLinks"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navigation -->
-            <div
-    class="collapse navbar-collapse justify-content-end w-100"
-    id="navLinks">
-
-    <div class="navbar-nav flex-lg-row flex-nowrap text-end">
-
-        <a
-            class="nav-link text-white text-decoration-underline text-nowrap px-2"
-            href="#">
-            News<span class="d-none d-lg-inline"> | </span>
-        </a>
-
-        <a
-            class="nav-link text-white text-decoration-underline text-nowrap px-2"
-            href="#">
-            Catalogue<span class="d-none d-lg-inline"> | </span>
-        </a>
-
-        <a
-            class="nav-link text-white text-decoration-underline text-nowrap px-2"
-            href="#">
-            Security
-        </a>
-
-    </div>
-</div>
-
+        <div class="navbar-nav flex-lg-row flex-nowrap text-end">
+            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                href="#">
+                News<span class="d-none d-lg-inline"> | </span>
+            </a>
+            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                href="#">
+                Catalogue<span class="d-none d-lg-inline"> | </span>
+            </a>
+            <a class="nav-link text-white text-decoration-underline text-nowrap px-2"
+                href="#">
+                Security
+            </a>
         </div>
-    </nav>
-</header>
-<!-- News subpages -->
-<div class="text-end">
-    <a href="#" class="text-muted text-decoration-underline">Events</a>
-    <span class="text-muted"> | </span>
-    <a href="#" class="text-muted text-decoration-none">
-        <strong>Announcements</strong>
-    </a>
+    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- News subpages -->
+        <div class="text-end">
+            <a href="#" class="text-muted text-decoration-underline">Events</a>
+            <span class="text-muted"> | </span>
+            <a href="#" class="text-muted text-decoration-none">
+                <strong>Announcements</strong>
+            </a>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
 </div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYt3lHB60NNkmXc5s9fDVZLESaAA55DTx3tHjIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
